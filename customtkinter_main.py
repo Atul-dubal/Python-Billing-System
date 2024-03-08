@@ -45,7 +45,7 @@ def introduction():
     common_frame = ctk.CTkFrame(window,fg_color="transparent")
     common_frame.pack(side=tk.TOP,pady=60)
     
-    img = ImageTk.PhotoImage(Image.open("login1.png"))
+    img = ImageTk.PhotoImage(Image.open("login.png"))
 
     label = ctk.CTkLabel(common_frame,image=img,text="",width=100,height=100)
     label.photo=img
@@ -317,8 +317,13 @@ def print_invoice():
     
 
 def add_product_db(data):
+        import os
         qrcode = pyqrcode.create(str(data))
-        qrcode.png("PRODUCT_QR_CODES/"+str(data[0])+"Q"+str(data[1])+".png",scale=6)
+        if(os.path.exists(os.path.join(os.getcwd(),"PRODUCT_QR_CODES/"))):
+            qrcode.png("PRODUCT_QR_CODES/"+str(data[0])+"Q"+str(data[1])+".png",scale=6)
+        else:
+            os.mkdir(os.path.join(os.getcwd(),"PRODUCT_QR_CODES/"))
+            qrcode.png("PRODUCT_QR_CODES/"+str(data[0])+"Q"+str(data[1])+".png",scale=6)
         try:
             # Connect to DB and create a cursor
             db = sqlite3.connect('allproducts.db')
