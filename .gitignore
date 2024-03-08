@@ -1,0 +1,10 @@
+PRODUCT_QR_CODES/
+Python Sem 4 Project.code-workspace
+__pycache__/
+allproducts.db
+functions.py
+intro1.gif
+login.gif
+welcome.gif
+try.py
+main.py
