@@ -78,7 +78,7 @@ This tool is developed by Atul Dattatray Dubal.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND) 4.0 International License.](LICENSE).
 
 ## Acknowledgements
 
