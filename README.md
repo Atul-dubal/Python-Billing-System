@@ -18,7 +18,7 @@ To run the Smart Shop Billing System locally, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/smart-shop-billing-system.git
+   git clone https://github.com/Atul-dubal/Python-Billing-System.git
    ```
 
 2. Navigate to the project directory:
