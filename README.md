@@ -72,6 +72,10 @@ Contributions to the Smart Shop Billing System are welcome! If you'd like to con
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new pull request.
 
+## Author
+
+This tool is developed by Atul Dattatray Dubal.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
