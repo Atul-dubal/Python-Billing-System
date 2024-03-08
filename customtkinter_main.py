@@ -315,7 +315,6 @@ def print_invoice():
     print_pdf(create_pdf(take_screenshot(billing_frame)))
 
     
-
 def add_product_db(data):
         import os
         qrcode = pyqrcode.create(str(data))
