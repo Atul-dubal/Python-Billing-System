@@ -38,7 +38,10 @@ To run the Smart Shop Billing System locally, follow these steps:
    ```bash
    python main.py
    ```
+## Default Credentials
+Username : admin
 
+Password : admin123
 ## Usage
 
 Upon launching the application, you will be prompted to log in with your username and password. Once logged in, you can access the dashboard, add products to the inventory, and generate invoices for purchases.
