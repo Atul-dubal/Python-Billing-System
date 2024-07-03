@@ -99,18 +99,6 @@ def login_function():
         common_layout()
     else:
         msg = messagebox.showerror("Authentication Error","Invalid Information")
-def login_check():
-    db = sqlite3.connect("allproducts.db")
-    cursor = db.cursor()
-    try:
-        query = '''select * from users'''
-        all_data = cursor.execute(query)
-        if len(all_data)> 0:
-            pass
-        for i in all_data:
-            print(i)
-    except:
-        setup_database()
 
 def common_layout():
     global home_btn,add_product_btn,invoice_btn,billing_frame
@@ -432,6 +420,20 @@ def setup_database():
     query1 = '''CREATE TABLE USERS (NAME TEXT,USERNAME TEXT PASSWORD INT,PHONE INT)'''
     cursor.execute(query1)
     print("TABLE CREATED")
+ 
+def login_check():
+    db = sqlite3.connect("allproducts.db")
+    cursor = db.cursor()
+    try:
+        query = '''select * from users'''
+        all_data = cursor.execute(query)
+        if len(all_data)> 0:
+            pass
+        for i in all_data:
+            print(i)
+    except:
+        setup_database()
+login_check()
     
 def read_database(isNames = False):
     names = []
